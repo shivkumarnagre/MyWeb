@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Floating Div Product Grid Demo</title>
+    <style>
+      body{
+        background-color: grey;
+      }
+      /* Float container */
+      #p-float {
+        max-width: 1200px;
+        margin: 0 auto;
+        /* Clearfix */
+        overflow: auto;
+      }
+      #p-float::after {
+        /* Clearfix */
+        content: "";
+        clear: both;
+        display: table;
+      }
+      /* Product items */
+      div.p-float {
+        float: left;
+        width: 25%;
+      }
+      div.p-float-in {
+        box-sizing: border-box;
+        margin: 5px; 
+        padding: 10px;
+        border: 1px solid #f2dcdc;
+        background: #fff7f7;
+      }
+      img.p-img {
+        width: 100%;
+        height: auto;
+      }
+      div.p-name {
+        font-weight: bold;
+        font-size: 1.1em;
+      }
+      div.p-price {
+        color: #f44242;
+      }
+      div.p-desc {
+        color: #888;
+        font-size: 0.9em;
+      }
+      button.p-add {
+        background: #f46b41;
+        color: #fff;
+        border: none;
+        width: 100%;
+        padding: 10px;
+        margin: 10px 5px 5px 5px;
+        font-size: 1.1em;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      /* Responsive */
+      @media only screen and (max-width: 1024px) {
+        div.p-float { width: 33%; }
+      }
+      @media only screen and (max-width: 600px) {
+        div.p-float { width: 50%; }
+      }
+      /* [DOES NOT MATTER] */
+      html, body {
+        padding: 0;
+        margin: 0;
+        font-family: arial, sans-serif;
+      }
+      nav{
+    background:transparent;
+    width:auto;
+    height: auto;
+    overflow:auto;
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow:auto;
+    font-family: sans-serif;
+  }
+  li{
+    float: left;
+  }
+  nav a{
+    width:100%;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size:18px;
+    color:white;
+    
+    padding: 20px 10px;
+    font-family:Arial;
+  }
+  nav a:hover{
+    background: skyblue;
+    color: black;
+  }
+  footer{
+  width:100%;
+  height: auto;
+  background-color: #333;
+  color: #17ff8d;
+  font-size: 23px;
+  text-align: center;
+  line-height: 50px;
+}
+footer a:hover{
+    color:blue;
+  }
+a{
+    background:transparent;
+    width:auto;
+    height: auto;
+    overflow:auto;
+    color:#01ff70;
+}
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html"> HOME</a><br>
+        <li><a href="contact.html"> CONTACT</a></li>
+        <li><a href="about.html"> ABOUT</a></li>
+      </ul>
+    </nav>
+    <div id="p-float">
+      <div class="p-float"><div class="p-float-in">
+        <img class="p-img" src="images/image20.jpg"/>
+        <div class="p-name">Item A</div>
+        <div class="p-price">$99.99</div>
+        <div class="p-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <button class="p-add">Add to Cart</button>
+      </div></div>
+      <div class="p-float"><div class="p-float-in">
+        <img class="p-img" src="images/image21.jpg"/>
+        <div class="p-name">Item B</div>
+        <div class="p-price">$88.88</div>
+        <div class="p-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <button class="p-add">Add to Cart</button>
+      </div></div>
+      <div class="p-float"><div class="p-float-in">
+        <img class="p-img" src="images/image22.jpg"/>
+        <div class="p-name">Item C</div>
+        <div class="p-price">$77.77</div>
+        <div class="p-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <button class="p-add">Add to Cart</button>
+      </div></div>
+      <div class="p-float"><div class="p-float-in">
+        <img class="p-img" src="images/image23.jpg"/>
+        <div class="p-name">Item D</div>
+        <div class="p-price">$11.11</div>
+        <div class="p-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <button class="p-add">Add to Cart</button>
+      </div></div>
+      <div class="p-float"><div class="p-float-in">
+        <img class="p-img" src="images/image19.jpg"/>
+        <div class="p-name">Item E</div>
+        <div class="p-price">$22.22</div>
+        <div class="p-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <button class="p-add">Add to Cart</button>
+      </div></div>
+      <div class="p-float"><div class="p-float-in">
+        <img class="p-img" src="images/image18.jpg"/>
+        <div class="p-name">Item F</div>
+        <div class="p-price">$33.33</div>
+        <div class="p-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <button class="p-add">Add to Cart</button>
+      </div></div>
+      <!--New-->
+
+      <div class="p-float"><div class="p-float-in">
+        <img class="p-img" src="images/image17.jpg"/>
+        <div class="p-name">Item F</div>
+        <div class="p-price">$33.33</div>
+        <div class="p-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <button class="p-add">Add to Cart</button>
+      </div></div>
+
+       <div class="p-float"><div class="p-float-in">
+        <img class="p-img" src="images/image16.jpg"/>
+        <div class="p-name">Item F</div>
+        <div class="p-price">$33.33</div>
+        <div class="p-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <button class="p-add">Add to Cart</button>
+      </div></div>
+
+
+    </div>
+      <footer>Copyright &copy;  BOOK  ADDICT  2020 
+       <a href="index.html">Home| </a>
+        <a href="about.html">About Us| </a>
+        <a href="contact.html">Contact</a>
+    </footer>
+  </body>
+</html>
